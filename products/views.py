@@ -5,12 +5,13 @@ from rest_framework.exceptions import NotFound
 
 from .models import Product
 from .serializers.common import ProductSerializer
+from .serializers.populated import PopulatedProductSerializer
 
 class ProductListView(APIView):
 
     def get(self, _request):
         product = Product.objects.all()
-        serialized_product = ProductSerializer(product, many = True)
+        serialized_product = PopulatedProductSerializer(product, many = True)
         return Response(serialized_product.data, status=status.HTTP_200_OK)
 
     def post(self, request):
@@ -30,7 +31,7 @@ class ProductDetailView(APIView):
 
     def get(self, _request, pk):
         product = self.get_product(pk = pk)
-        serialized_product = ProductSerializer(product)
+        serialized_product = PopulatedProductSerializer(product)
         return Response(serialized_product.data, status = status.HTTP_200_OK)
 
     def delete(self, _request, pk):
