@@ -2,12 +2,14 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import NotFound
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from .models import Product
 from .serializers.common import ProductSerializer
 from .serializers.populated import PopulatedProductSerializer
 
 class ProductListView(APIView):
+    permission_classes = (IsAuthenticatedOrReadOnly, )
 
     def get(self, _request):
         product = Product.objects.all()
@@ -15,6 +17,7 @@ class ProductListView(APIView):
         return Response(serialized_product.data, status=status.HTTP_200_OK)
 
     def post(self, request):
+        request.data['owner']= request.user.id
         product_to_add = ProductSerializer(data=request.data)
         if product_to_add.is_valid():
             product_to_add.save()

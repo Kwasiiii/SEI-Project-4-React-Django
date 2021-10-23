@@ -9,6 +9,11 @@ class Review(models.Model):
     created_at = models.DateTimeField(auto_now_add = True)
     product = models.ForeignKey(
         "products.Product",
-        related_name = "reviews",
+        related_name = "review",
         on_delete=models.PROTECT
+    )
+    owner = models.ForeignKey(
+        "jwt_auth.User",
+        related_name = "review",
+        on_delete = models.CASCADE
     )

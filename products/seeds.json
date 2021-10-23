@@ -1,0 +1,17 @@
+[
+{
+  "model": "products.product",
+  "pk": 1,
+  "fields": {
+    "brand": "Alexander McQueen",
+    "name": "skull-embroidered cotton hoodie",
+    "description": "An Alexander McQueen mainstay, the skull motif appears as a bold detail on this hoodie. The piece's relaxed construction and two-tone colourway allows this design to take the focus.",
+    "price": "£620",
+    "size": "[\"XS\", \"S\", \"M\", \"L\"]",
+    "highlight": "[\"black\", \"long sleeves\"]",
+    "images": "[\"alex.png\", \"alexander.png\"]",
+    "in_stock": true,
+    "category": []
+  }
+}
+]
