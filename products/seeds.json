@@ -1,17 +1,482 @@
 [
 {
   "model": "products.product",
-  "pk": 1,
+  "pk": 5,
   "fields": {
     "brand": "Alexander McQueen",
     "name": "skull-embroidered cotton hoodie",
     "description": "An Alexander McQueen mainstay, the skull motif appears as a bold detail on this hoodie. The piece's relaxed construction and two-tone colourway allows this design to take the focus.",
-    "price": "£620",
+    "price": 620,
     "size": "[\"XS\", \"S\", \"M\", \"L\"]",
-    "highlight": "[\"black\", \"long sleeves\"]",
-    "images": "[\"alex.png\", \"alexander.png\"]",
+    "highlight": "[\"black\", \"stretch-cotton\", \"skull embroidery to the front\", \"embroidered logo to the front\", \"drawstring hood\", \"long sleeves\", \"ribbed cuffs\", \"ribbed hem\"]",
+    "images": "[\"https://i.imgur.com/orVC1Kv.png\", \"https://i.imgur.com/MpZaMsT.png\", \"https://i.imgur.com/YNZG5xy.png\", \"https://i.imgur.com/EuZkyw5.png\", \"https://i.imgur.com/z8yFO49.png\"]",
+    "composition": "Cotton 97%, Viscose 70%, Polyester 30%, Elastane 3",
+    "washing_instruction": "Machine Wash",
+    "wearing": "M",
     "in_stock": true,
-    "category": []
+    "category": [
+      9,
+      2
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 6,
+  "fields": {
+    "brand": "Alexander McQueen",
+    "name": "graffiti-logo long-sleeve T-shirt",
+    "description": "Alexander McQueen is renowned for infusing art inspirations into garment designs. Showcased on this long-sleeve top, the logo is printed is in a graffity style, whilst the two-tone palette gives it a refined edge.",
+    "price": 250,
+    "size": "[\"XS\", \"S\", \"M\", \"L\"]",
+    "highlight": "[\"white\", \"cotton\", \"logo print to the front\", \"crew neck\", \"long sleeves\", \"straight hem\"]",
+    "images": "[\"https://i.imgur.com/1H5yudc.png\", \"https://i.imgur.com/zWebEkB.png\", \"https://i.imgur.com/smpzwjF.png\", \"https://i.imgur.com/E7cjvbn.png\", \"https://i.imgur.com/eMrf7vk.png\"]",
+    "composition": "cotton 100%",
+    "washing_instruction": "Machine Wash",
+    "wearing": "M",
+    "in_stock": true,
+    "category": [
+      9,
+      2
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 7,
+  "fields": {
+    "brand": "Alexander McQueen",
+    "name": "skull-embroidered zip-ankle tack pants",
+    "description": "Alexander McQueen's affinity with dark-themed aesthetics runs throughout the British house collections. Here, it is showcased by the signature skull motif that adorns the relaxed silhouette of these black track pants as a hint of recognition for those in the know.",
+    "price": 730,
+    "size": "[\"46\", \"48\", \"50\", \"52\"]",
+    "highlight": "[\"black\", \"stretch-cotton\", \"skull embroidery to the front\", \"embroidered logo to the front\", \"drawstring hood\", \"long sleeves\", \"ribbed cuffs\", \"ribbed hem\"]",
+    "images": "[\"https://i.imgur.com/ccl5Nmc.jpg\", \"https://i.imgur.com/w217tiN.jpg\", \"https://i.imgur.com/SRvZE0r.png\", \"https://i.imgur.com/uN5WJ6d.png\", \"https://i.imgur.com/GXQAbBv.png\"]",
+    "composition": "Cotton 100%, Polyamide 72%, Polyester 22%, Elastan",
+    "washing_instruction": "Dry Clean Only",
+    "wearing": "48",
+    "in_stock": true,
+    "category": [
+      2,
+      10
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 8,
+  "fields": {
+    "brand": "Alexander McQueen",
+    "name": "Court low-top sneakers",
+    "description": "The Court low-top sneakers from Alexander McQueen are a more slender iteration of the brand's chunky Oversized footwear style. This version is made from white leather and detailed with an iridescent-blue heel counter.",
+    "price": 395,
+    "size": "[\"40\", \"41\", \"41.5\", \"42\", \"43\", \"43.5\", \"44. 45\"]",
+    "highlight": "[\"white/iridescent blue\", \"leather\", \"contrasting heel counter\", \"logo print to the rear\", \"perforated detailing\", \"front lace-up fastening\", \"almond toe\", \"chunky rubber sole\"]",
+    "images": "[\"https://i.imgur.com/mNZ9674.jpg\", \"https://i.imgur.com/MVyWKcy.jpg\", \"https://i.imgur.com/6kTivRL.jpg\", \"https://i.imgur.com/8j30I2J.jpg\"]",
+    "composition": "Sole: Rubber 100%,  Outer: Leather 100%,  Lining:",
+    "washing_instruction": "Clean",
+    "wearing": "44",
+    "in_stock": true,
+    "category": [
+      2,
+      7
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 9,
+  "fields": {
+    "brand": "Alexander McQueen",
+    "name": "harness logo tape jacket",
+    "description": "Adorned with the house's signature harness detail at the shoulders, this black jacket from Alexander McQueen's AW21 collection features a logo tape accent for an understated take on branding and a practical and sportswear-inspired drawstring hoodie.",
+    "price": 1050,
+    "size": "[\"48\", \"50\", \"52\"]",
+    "highlight": "[\"black\", \"harness detail\", \"logo-tape detailing\", \"front zip fastening\", \"drawstring hood\", \"long sleeves\", \"two side zip-fastening pockets\"]",
+    "images": "[\"https://i.imgur.com/cqby2wa.jpg\", \"https://i.imgur.com/yUg3W8C.jpg\", \"https://i.imgur.com/J0YyJNK.jpg\", \"https://i.imgur.com/BfWRPOj.jpg\", \"https://i.imgur.com/izdr4bp.jpg\"]",
+    "composition": "Polyester 100%, Polyamide 100%",
+    "washing_instruction": "Dry Clean Only",
+    "wearing": "48",
+    "in_stock": true,
+    "category": [
+      2,
+      4
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 10,
+  "fields": {
+    "brand": "Alexander McQueen",
+    "name": "graffiti logo-print padded jacket",
+    "description": "Alexander McQueen founded his namesake label in 1992 and became synonymous with a darkly alluring aesthetic that fed into McQueen's anarchistic sensibilities. Produced in Italy, this short puffer jacket is detailed with a rear graffiti logo print at the back of the neckline.",
+    "price": 1258,
+    "size": "[\"46\", \"48\", \"50\", \"52\", \"54\", \"56\"]",
+    "highlight": "[\"black\", \"logo print to the rear\", \"funnel neck\", \"long sleeves\", \"concealed front press-stud fastening\", \"concealed front zip fastening\", \"two front flap pockets\"]",
+    "images": "[\"https://i.imgur.com/vaGGZSF.jpg\", \"https://i.imgur.com/gy8TupY.jpg\", \"https://i.imgur.com/WWoxiJC.jpg\", \"https://i.imgur.com/usd8clK.jpg\", \"https://i.imgur.com/uKl8CKG.jpg\"]",
+    "composition": "Polyester 100%, Polyamide 100%",
+    "washing_instruction": "Dry Clean Only",
+    "wearing": "48",
+    "in_stock": true,
+    "category": [
+      2,
+      4
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 11,
+  "fields": {
+    "brand": "Alexander McQueen",
+    "name": "Meadow-embroidered cotton shirt",
+    "description": "Alexander McQueen forgoes its signature skull motif in favour of intricate embroidery. Decorated with a contrasting black Meadow motif, this long-sleeve cotton shirt showcases the brand's eye for detail.",
+    "price": 720,
+    "size": "[\"15\", \"16 1/2\"]",
+    "highlight": "[\"white\", \"cotton\", \"embroidered design\", \"classic collar\", \"long sleeves\", \"front button fastening\", \"straight hem\"]",
+    "images": "[\"https://i.imgur.com/ASrSNnH.jpg\", \"https://i.imgur.com/aYO48L2.jpg\", \"https://i.imgur.com/bLUUSzB.jpg\", \"https://i.imgur.com/9lATFJe.jpg\", \"https://i.imgur.com/zHZqyW4.jpg\"]",
+    "composition": "Cotton 100%, Polyester 65%, Viscose 35%",
+    "washing_instruction": "Dry Clean Only",
+    "wearing": "16 1/2 (in)",
+    "in_stock": true,
+    "category": [
+      2,
+      6
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 12,
+  "fields": {
+    "brand": "Alexander McQueen",
+    "name": "illustrated skull-print T-shirt",
+    "description": "The skull print is synonymous with Alexander McQueen, appearing throughout the House's collections. It appears as an illustration-type graphic on this soft cotton T-shirt.",
+    "price": 185,
+    "size": "[\"XS\", \"S\", \"M\", \"L\", \"XL\", \"XXL\"]",
+    "highlight": "[\"black\", \"cotton\", \"skull print to the front\", \"round neck\", \"short sleeves\"]",
+    "images": "[\"https://i.imgur.com/jiGFm0s.jpg\", \"https://i.imgur.com/uqm8xHz.jpg\", \"https://i.imgur.com/ofoNKcq.jpg\", \"https://i.imgur.com/3AU8ebE.jpg\", \"https://i.imgur.com/LiB4dRW.jpg\"]",
+    "composition": "Cotton 100%",
+    "washing_instruction": "Machine Wash",
+    "wearing": "L",
+    "in_stock": true,
+    "category": [
+      2,
+      11
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 13,
+  "fields": {
+    "brand": "Alexander McQueen",
+    "name": "Worker lace-up boots",
+    "description": "Crafted from brushed leather to a high shine, these Worker lace-up boots from Alexander McQueen sit atop a thick lug sole. Their sturdy construction is reminiscent of protective footwear while their all-black design adds an edgy twist to the pair.",
+    "price": 590,
+    "size": "[\"38\", \"39\", \"40\", \"41\", \"41.5\", \"42\", \"43\", \"43.5\", \"44. 45\", \"45.5\"]",
+    "highlight": "[\"black\", \"leather\", \"brushed finish\", \"round toe\", \"ankle-length logo-print tongue\", \"front lace-up fastening\", \"logo pull-tab at the heel\", \"rubber lug sole\"]",
+    "images": "[\"https://i.imgur.com/SXJz8UZ.jpg\", \"https://i.imgur.com/uHdqoUr.jpg\", \"https://i.imgur.com/5hBojoD.jpg\", \"https://i.imgur.com/RML0T8t.jpg\"]",
+    "composition": "Outer: Leather 100%, Sole: Rubber 100%, Lining: Le",
+    "washing_instruction": "Dry Clean Only",
+    "wearing": "44",
+    "in_stock": true,
+    "category": [
+      2,
+      7
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 14,
+  "fields": {
+    "brand": "Alexander McQueen",
+    "name": "bead-embellished Skull polo shirt",
+    "description": "The skull has remained an enduring motif for the Alexander McQueen brand since the label was founded in 1992 and pays homage to the brand's darkly alluring aesthetic. Envisioned in tonal beading at the chest, the skull emblem acts as the sole detail on this cotton and silk polo shirt.",
+    "price": 390,
+    "size": "[\"XS\", \"S\", \"M\", \"L\", \"XL\"]",
+    "highlight": "[\"white\", \"silk/cotton\", \"bead embellishment\", \"skull appliqu\\u00e9\", \"polo collar\", \"front button placket\", \"short sleeves\", \"ribbed cuffs\", \"straight hem\", \"side slits\"]",
+    "images": "[\"https://i.imgur.com/5fekhuC.jpg\", \"https://i.imgur.com/ZHs4q3W.jpg\", \"https://i.imgur.com/rHz5WkN.jpg\", \"https://i.imgur.com/cS7ZZWu.jpg\", \"https://i.imgur.com/jFbyJBF.jpg\"]",
+    "composition": "Silk 100%, Metal 100%, Cotton 100%, Glass 100%, Me",
+    "washing_instruction": "Dry Clean Only",
+    "wearing": "L",
+    "in_stock": true,
+    "category": [
+      2,
+      5
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 15,
+  "fields": {
+    "brand": "Balenciaga",
+    "name": "Retail Therapy logo hoodie",
+    "description": "Cut in an oversized fit, this hoodie follows Balenciaga’s relaxed design identity. For a recognisable look, its cotton design features a branded Retail Therapy print to the front.",
+    "price": 695,
+    "size": "[\"1\", \"2\", \"3\", \"4\", \"5\"]",
+    "highlight": "[\"ivory beige\", \"cotton\", \"logo print at the chest\", \"classic hood\", \"drop shoulder\", \"long sleeves\", \"elasticated hem\"]",
+    "images": "[\"https://i.imgur.com/deGfA6c.jpg\"]",
+    "composition": "Cotton 100%,  Outer: Cotton 100%",
+    "washing_instruction": "Machine Wash",
+    "wearing": "2",
+    "in_stock": true,
+    "category": [
+      9,
+      2
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 16,
+  "fields": {
+    "brand": "Balenciaga",
+    "name": "paint-splatter boots",
+    "description": "Balenciaga is known for adding an industrial touch to traditional wardrobe staples. The latest collection presented these ankle boots, which are crafted from black leather and come finished with a contrasting paint-splatter print throughout for a final well-worn look.",
+    "price": 750,
+    "size": "[\"39\", \"40\", \"41\", \"41.5\", \"42\"]",
+    "highlight": "[\"black\", \"leather\", \"round toe\", \"paint splatter detail\", \"branded insole\", \"ankle-length\", \"front lace-up fastening\", \"pull-tab at the heel\"]",
+    "images": "[\"https://i.imgur.com/tQiB7Qz.jpg\", \"https://i.imgur.com/1QL7mNq.jpg\", \"https://i.imgur.com/ICa2pqV.jpg\", \"https://i.imgur.com/BQxgp09.jpg\"]",
+    "composition": "Lining: Leather 100%, Outer: Fabric 100%",
+    "washing_instruction": "Dry Clean Only",
+    "wearing": "N/A",
+    "in_stock": true,
+    "category": [
+      2,
+      7
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 17,
+  "fields": {
+    "brand": "Balenciaga",
+    "name": "Elastic Pants",
+    "description": "Designed in a loose fit, these Balenciaga trousers exhibit a street style silhouette and a distinguishing elastic waistband decorated with tonal logo lettering.",
+    "price": 595,
+    "size": "[\"46\", \"48\", \"50\", \"52\"]",
+    "highlight": "[\"black\", \"logo waistband\", \"elasticated waistband\", \"two side slit pockets\", \"rear button-fastening jetted pocket\"]",
+    "images": "[\"https://i.imgur.com/k24jNBk.jpg\", \"https://i.imgur.com/8WYqkAP.jpg\", \"https://i.imgur.com/OrG8iu1.jpg\", \"https://i.imgur.com/yKrVurL.jpg\"]",
+    "composition": "Viscose 100%, Lining: Cupro 100%, Outer: Viscose 1",
+    "washing_instruction": "Dry Clean Only",
+    "wearing": "46",
+    "in_stock": true,
+    "category": [
+      2,
+      10
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 18,
+  "fields": {
+    "brand": "Balenciaga",
+    "name": "logo-print short-sleeve T-shirt",
+    "description": "Playful in their design approach, Balenciaga puts a political spin on this iteration of the brand's logo. Printed at the chest and at the back of a classic T-shirt silhouette, the brand's minimalist feel is also maintained.",
+    "price": 465,
+    "size": "[\"XS\", \"S\", \"M\", \"L\", \"XL\", \"XXL\"]",
+    "highlight": "[\"white\", \"cotton\", \"logo print at the chest\", \"logo print to the rear\", \"round neck\", \"drop shoulder\", \"short sleeves\", \"straight hem\"]",
+    "images": "[\"https://i.imgur.com/r6pWD4l.jpg\", \"https://i.imgur.com/8DmNNal.jpg\", \"https://i.imgur.com/j8nUncz.jpg\", \"https://i.imgur.com/3LQGcMs.jpg\", \"https://i.imgur.com/jgI3gfK.jpg\"]",
+    "composition": "Cotton 100%",
+    "washing_instruction": "Machine Wash",
+    "wearing": "L",
+    "in_stock": true,
+    "category": [
+      2,
+      11
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 19,
+  "fields": {
+    "brand": "Balenciaga",
+    "name": "distressed-effect denim jacket",
+    "description": "Known for a revolutionary and forward-thinking approach to design, this classic denim jacket silhouette is given a signature Balenciaga twist, with logo detailing to the rear. This embroidered design and ripped detailing adds a textural twist that is in keeping with streetwear trends.",
+    "price": 1150,
+    "size": "[\"XS\", \"S\", \"M\"]",
+    "highlight": "[\"blue\", \"cotton\", \"distressed effect\", \"embroidered design\", \"classic collar\", \"front button fastening\", \"long sleeves\", \"two chest flap pockets\", \"silver-tone hardware\", \"two side slit pockets\"]",
+    "images": "[\"https://i.imgur.com/WoT79CC.jpg\", \"https://i.imgur.com/UHlMffs.jpg\", \"https://i.imgur.com/GxXQQMH.jpg\", \"https://i.imgur.com/yeo2Z6n.jpg\", \"https://i.imgur.com/EgRUS85.jpg\"]",
+    "composition": "Cotton 100%, Polyester 100%",
+    "washing_instruction": "Machine Wash",
+    "wearing": "M",
+    "in_stock": true,
+    "category": [
+      2,
+      4
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 20,
+  "fields": {
+    "brand": "Balenciaga",
+    "name": "Space logo-patch shirt",
+    "description": "Demna Gvasalia pushed boundaries this season with Balenciaga's AW21 utopian video-game presentation set in 2031. Featuring various space logos from disparate eras, the four patches on this white cotton poplin shirt celebrate the brand's innovative way of combining both historical and futuristic references.",
+    "price": 850,
+    "size": "[\"37\", \"38\", \"39\"]",
+    "highlight": "[\"white\", \"cotton\", \"patch detail\", \"embroidered logo to the rear\", \"drop shoulder\", \"long sleeves\", \"classic collar\", \"buttoned cuffs\", \"curved hem\", \"front button fastening\"]",
+    "images": "[\"https://i.imgur.com/2xDdALP.jpg\", \"https://i.imgur.com/FBAlQrG.jpg\", \"https://i.imgur.com/cDYexeM.jpg\", \"https://i.imgur.com/dASJk3G.jpg\", \"https://i.imgur.com/l6BclxV.jpg\"]",
+    "composition": "Polyester 100%, Cotton 100%",
+    "washing_instruction": "Hand Wash",
+    "wearing": "40",
+    "in_stock": true,
+    "category": [
+      2,
+      11
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 21,
+  "fields": {
+    "brand": "Balenciaga",
+    "name": "Speed 2.0 sneakers",
+    "description": "Balenciaga's Speed 2.0 sneakers are an update on the brand's much-loved Speed style. They're reworked with a chunky rubber sole comprising five separate segments for optimal support of the foot.",
+    "price": 725,
+    "size": "[\"40\", \"41\", \"41.5\", \"42\", \"43\", \"43.5\", \"44. 45\"]",
+    "highlight": "[\"dark blue/white/black\", \"logo print to the side\", \"stretch-design\", \"sock-style ankle\", \"almond toe\", \"chunky rubber sole\"]",
+    "images": "[\"https://i.imgur.com/ZGtzM8H.jpg\", \"https://i.imgur.com/uwcNzuu.jpg\", \"https://i.imgur.com/8bpOTLY.jpg\", \"https://i.imgur.com/MzK1tXP.jpg\"]",
+    "composition": "Lining: Fabric 100%, Outer: Fabric 100%,",
+    "washing_instruction": "Dry Clean Only",
+    "wearing": "42",
+    "in_stock": true,
+    "category": [
+      2,
+      7
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 22,
+  "fields": {
+    "brand": "Balenciaga",
+    "name": "Retail Therapy slogan cotton T-shirt",
+    "description": "Statement-making streetwear-inspired designs are what Balenciaga are renowned for, displayed in the form of this Retail Therapy T-shirt. The neutral hue allows for the slogan to be the distinguishing feature of the garment.",
+    "price": 395,
+    "size": "[\"XS\", \"S\", \"M\"]",
+    "highlight": "[\"beige\", \"cotton\", \"logo print at the chest\", \"round neck\", \"drop shoulder\", \"straight hem\"]",
+    "images": "[\"https://i.imgur.com/QlaCYdh.jpg\", \"https://i.imgur.com/qTLLPe6.jpg\", \"https://i.imgur.com/IviPjHc.jpg\", \"https://i.imgur.com/mhfDMMO.jpg\", \"https://i.imgur.com/fItfaZv.jpg\"]",
+    "composition": "Cotton 100%",
+    "washing_instruction": "Machine Wash",
+    "wearing": "L",
+    "in_stock": true,
+    "category": [
+      2,
+      11
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 23,
+  "fields": {
+    "brand": "Balenciaga",
+    "name": "logo-embroidered short-sleeve T-shirt",
+    "description": "Adding bold signatures to practical pieces is one of Balenciaga's main specialities. Punctuated by a contrasting yellow logo at the chest, this navy blue T-shirt is aligned with the brand's aesthetic.",
+    "price": 395,
+    "size": "[\"XS\", \"S\", \"M\", \"L\"]",
+    "highlight": "[\"navy blue\", \"cotton\", \"round neck\", \"embroidered logo at the chest drop shoulder\", \"short sleeves\", \"straight hem\"]",
+    "images": "[\"https://i.imgur.com/QEX3QGX.jpg\", \"https://i.imgur.com/mdIgvha.jpg\", \"https://i.imgur.com/LrS0eM2.jpg\", \"https://i.imgur.com/kId1f1A.jpg\", \"https://i.imgur.com/ndOSk2Y.jpg\"]",
+    "composition": "Polyester 100%, Cotton 100%",
+    "washing_instruction": "Machine Wash",
+    "wearing": "M",
+    "in_stock": true,
+    "category": [
+      2,
+      11
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 24,
+  "fields": {
+    "brand": "Balenciaga",
+    "name": "logo print short-sleeve shirt",
+    "description": "Logomania is in full force for SS21, and this Balenciaga shirt is a prime example of that. In a short-sleeve design, this piece features a subtle yet impactful all-over logo print.",
+    "price": 750,
+    "size": "[\"39\", \"40\", \"41\", \"41.5\", \"42\"]",
+    "highlight": "[\"blue\", \"cotton\", \"button-down collar\", \"all-over logo print\", \"front button fastening\", \"chest patch pocket\", \"short sleeves\", \"straight hem\", \"rear curved hem\"]",
+    "images": "[\"https://i.imgur.com/BoveH5w.jpg\", \"https://i.imgur.com/0fp1bdf.jpg\", \"https://i.imgur.com/oQHaNEM.jpg\", \"https://i.imgur.com/8iYbJx1.jpg\", \"https://i.imgur.com/KxS6rrW.jpg\"]",
+    "composition": "Cotton 100%",
+    "washing_instruction": "Machine Wash",
+    "wearing": "39",
+    "in_stock": true,
+    "category": [
+      2,
+      6
+    ],
+    "owner": [
+      1
+    ]
   }
 }
 ]

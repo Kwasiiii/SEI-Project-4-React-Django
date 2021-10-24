@@ -1,0 +1,21 @@
+[
+{
+  "model": "jwt_auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$jCSKacWT4r3kBtsJOah2hp$cyVn5zG1sReqi3LLqwfzvKnWi8ZkDImEQKk+yDiVCYs=",
+    "last_login": "2021-10-23T19:40:32.209Z",
+    "is_superuser": true,
+    "username": "admin",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-10-23T19:40:08.928Z",
+    "email": "admin@email.com",
+    "first_name": "",
+    "last_name": "",
+    "profile_image": "",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

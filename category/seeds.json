@@ -1,0 +1,79 @@
+[
+{
+  "model": "category.category",
+  "pk": 2,
+  "fields": {
+    "name": "All Clothing"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 3,
+  "fields": {
+    "name": "Coats"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 4,
+  "fields": {
+    "name": "Jackets"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 5,
+  "fields": {
+    "name": "Polo Shirts"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 6,
+  "fields": {
+    "name": "Shirts"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 7,
+  "fields": {
+    "name": "Shoes"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 8,
+  "fields": {
+    "name": "Shorts"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 9,
+  "fields": {
+    "name": "Sweatshirts & Knitwear"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 10,
+  "fields": {
+    "name": "Trousers"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 11,
+  "fields": {
+    "name": "T-Shirts & Vests"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 12,
+  "fields": {
+    "name": "Underwear & socks"
+  }
+}
+]
