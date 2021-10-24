@@ -478,5 +478,245 @@
       1
     ]
   }
+},
+{
+  "model": "products.product",
+  "pk": 25,
+  "fields": {
+    "brand": "Gucci",
+    "name": "V-neck cable-knit wool jumper",
+    "description": "Gucci takes the humble jumper and updates it with unexpected details. Knitted with cable and pointelle patterns all over, this V-neck wool iteration features detachable sleeves held together with sporty zips.",
+    "price": 890,
+    "size": "[\"S\", \"M\"]",
+    "highlight": "[\"mustard yellow\", \"wool\", \"knitted construction\", \"cable knit\", \"pointelle knit\", \"ribbed trim\", \"plunging V-neck\", \"detachable sleeves\"]",
+    "images": "[\"https://i.imgur.com/332pGu9.jpg\", \"https://i.imgur.com/hkUfHEB.jpg\", \"https://i.imgur.com/IqNstJi.jpg\", \"https://i.imgur.com/muWDCf0.jpg\", \"https://i.imgur.com/R5kXcGt.jpg\"]",
+    "composition": "Wool 100%",
+    "washing_instruction": "Machine Wash",
+    "wearing": "L",
+    "in_stock": true,
+    "category": [
+      9,
+      2
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 26,
+  "fields": {
+    "brand": "Gucci",
+    "name": "leather-trim logo-print tote",
+    "description": "Planning a weekend away or simply carry loads of things day to day? Gucci's tote has you covered, so you won't need to leave anything behind. Go on, add in that extra makeup bag.",
+    "price": 1670,
+    "size": "[\"One Size\"]",
+    "highlight": "[\"brown/beige\", \"canvas\", \"circular top handles\", \"leather trims\", \"top zip fastening\", \"all-over logo print\"]",
+    "images": "[\"https://i.imgur.com/GaShTfs.jpg\", \"https://i.imgur.com/e0OSIrf.jpg\", \"https://i.imgur.com/A7MehIn.jpg\", \"https://i.imgur.com/Mei8wKm.jpg\", \"https://i.imgur.com/P4ejpgn.jpg\"]",
+    "composition": "Lining: Cotton 100%, Linen/Flax 100%",
+    "washing_instruction": "Dry Clean Only",
+    "wearing": "One Side",
+    "in_stock": true,
+    "category": [
+      2,
+      13
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 27,
+  "fields": {
+    "brand": "Gucci",
+    "name": "cat-patch jacket",
+    "description": "Gucci gives life to its playful spirit with this black hoodie. Crafted from cotton and cut to a simple drawstring-hood silhouette, this piece is adorned with a slogan and text print to the front that reads: 'This One's Dedicated To All You Gucci Bag Gucci Carriers Out There It's Called You Got Good Taste'.",
+    "price": 1050,
+    "size": "[\"XS\", \"S\", \"M\", \"L\", \"XL\", \"XXL\"]",
+    "highlight": "[\"red\", \"concealed hood\", \"stand-up collar\", \"front zip fastening\", \"long sleeves\", \"front zip fastening pockets\"]",
+    "images": "[\"https://i.imgur.com/biTk6rt.jpg\", \"https://i.imgur.com/tTkxubt.jpg\", \"https://i.imgur.com/sS1ukpe.jpg\", \"https://i.imgur.com/4bpOD8P.jpg\", \"https://i.imgur.com/SEMDl67.jpg\"]",
+    "composition": "Polyamide 100%, Canvas 100%",
+    "washing_instruction": "Dry Clean Only",
+    "wearing": "L",
+    "in_stock": true,
+    "category": [
+      2,
+      4
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 28,
+  "fields": {
+    "brand": "Gucci",
+    "name": "Gucci Print hooded sweatshirt",
+    "description": "Alessandro Michele updates the Gucci logo in an unexpected way, inspired by vintage prints from the eighties. Presented on the front of a felted cotton jersey sweatshirt. White felted cotton jersey with Gucci print. Fixed hood. Rib trims. Boxy fit. 100% cotton. Made in Italy. The model is 6’2\" and is wearing size medium.",
+    "price": 870,
+    "size": "[\"XS\", \"S\", \"M\", \"L\"]",
+    "highlight": "[\"Cream\", \"Long sleeves\"]",
+    "images": "[\"https://i.imgur.com/z9BsuAW.jpg\", \"https://i.imgur.com/wQy6Bsr.jpg\", \"https://i.imgur.com/mP9bgZm.jpg\", \"https://i.imgur.com/RdT3MFb.jpg\", \"https://i.imgur.com/fiomylB.jpg\"]",
+    "composition": "Cotton 100%",
+    "washing_instruction": "Hand Wash",
+    "wearing": "M",
+    "in_stock": true,
+    "category": [
+      9,
+      2
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 29,
+  "fields": {
+    "brand": "Gucci",
+    "name": "Off The Grid GG Tennis 1977 sneakers",
+    "description": "Lighten your footprint with these GG Tennis 1977 sneakers from Gucci. Crafted from ECONYL®, a nylon fabric made with recycled yarn, these high-top pair combine casual style with a responsible outlook. Name a better duo.",
+    "price": 550,
+    "size": "[\"4.5\", \"5\", \"5.5\", \"6\", \"6.5\", \"7\", \"7.5\", \"8\", \"8.5\", \"9\"]",
+    "highlight": "[\"black\", \"ECONYL\\u00ae/recycled polyester/organic cotton\", \"GG Supreme canvas\", \"round toe\", \"front lace-up fastening\", \"logo patch at the tongue\", \"flat rubber sole\"]",
+    "images": "[\"https://i.imgur.com/8ixGiKf.jpg\", \"https://i.imgur.com/e8OPaUX.jpg\", \"https://i.imgur.com/q3uRmPi.jpg\", \"https://i.imgur.com/N31Fw29.jpg\", \"https://i.imgur.com/wBoLiLm.jpg\"]",
+    "composition": "Outer: Nylon 100%  Sole: Rubber 100%",
+    "washing_instruction": "Dry Clean Only",
+    "wearing": "7",
+    "in_stock": true,
+    "category": [
+      2,
+      7
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 30,
+  "fields": {
+    "brand": "Gucci",
+    "name": "Ophidia GG medium carry-on duffle",
+    "description": "The world of Ophidia evolves with the introduction of a duffle shape crafted in soft GG Supreme canvas with inlaid green and red Web stripe. A contemporary take on a Gucci archival belt buckle from the '70s, the Double G is repurposed and appears atop a textured leather tab detail. The carry-on is completed with a detachable and adjustable strap, lock with key holder and luggage tag.;Beige/ebony GG Supreme canvas, a material with low environmental impact, with brown leather trim;Green and red We",
+    "price": 1420,
+    "size": "[\"One Size\"]",
+    "highlight": "[\"brown\"]",
+    "images": "[\"https://i.imgur.com/T9xRYWS.jpg\", \"https://i.imgur.com/TuwXeXa.jpg\", \"https://i.imgur.com/Mcb9p12.jpg\", \"https://i.imgur.com/btfLRyh.jpg\", \"https://i.imgur.com/cTo0UKT.jpg\"]",
+    "composition": "Lining: Cotton 100%, Linen/Flax 100%",
+    "washing_instruction": "Dry Clean Only",
+    "wearing": "One Side",
+    "in_stock": true,
+    "category": [
+      2,
+      13
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 31,
+  "fields": {
+    "brand": "Gucci",
+    "name": "GG Web-stripe track jacket",
+    "description": "Gucci's iconic Web-stripe - inspired by British equestrian - dates back to its origin in the 1950s. Today, it adorns the sleeves of this GG Supreme print track jacket from the house's Ouverture collection to present a modern-day staple with an undeniably heritage feel.",
+    "price": 1300,
+    "size": "[\"XS\", \"S\", \"M\", \"L\"]",
+    "highlight": "[\"green/navy/multicolour\", \"cotton-blend\", \"signature GG Supreme print\", \"signature Web-stripe trim\", \"high neck\", \"long sleeves\"]",
+    "images": "[\"https://i.imgur.com/XPxJDbb.jpg\", \"https://i.imgur.com/13M1fP8.jpg\", \"https://i.imgur.com/g4HX187.jpg\", \"https://i.imgur.com/qN9YAt2.jpg\", \"https://i.imgur.com/SShcD1y.jpg\"]",
+    "composition": "Polyester 55%, Cotton 45%",
+    "washing_instruction": "Machine Wash",
+    "wearing": "L",
+    "in_stock": true,
+    "category": [
+      9,
+      2
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 32,
+  "fields": {
+    "brand": "Gucci",
+    "name": "Oversize T-shirt with Interlocking G",
+    "description": "The now recognizable oversize Gucci T-shirt continues to evolve with each new collection, the Interlocking G print is influenced by an '80s design from the archives. Streetwear continues to be a defining feature of Gucci's collections and is often juxtaposed by tailored separates. Off-white cotton jersey with wrinkled effect. Interlocking G print. Oversize fit. 100% cotton. Made in Italy.",
+    "price": 340,
+    "size": "[\"XS\", \"S\", \"M\", \"L\"]",
+    "highlight": "[\"Cream\", \"short sleeves\"]",
+    "images": "[\"https://i.imgur.com/OY0adb0.jpg\", \"https://i.imgur.com/akoLtYJ.jpg\", \"https://i.imgur.com/k3kbsqb.jpg\", \"https://i.imgur.com/TTF62or.jpg\", \"https://i.imgur.com/mvbBd1G.jpg\"]",
+    "composition": "Cotton 100%",
+    "washing_instruction": "Machine Wash",
+    "wearing": "M",
+    "in_stock": true,
+    "category": [
+      2,
+      11
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 33,
+  "fields": {
+    "brand": "Gucci",
+    "name": "logo-print two-piece suit",
+    "description": "You always wanted to be like Jay Gatsby, a well-dressed, successful young man, living in a big house and living an epic love. Well, get in your Fitzgerald mood with this Gucci suit and head to Long Island. Maybe destiny will do the rest, who knows.",
+    "price": 1840,
+    "size": "[\"46\", \"48\", \"50\", \"52\"]",
+    "highlight": "[\"blue\", \"wool\", \"all-over logo print\"]",
+    "images": "[]",
+    "composition": "Lining: Cotton 100%  Outer: , Wool 100%",
+    "washing_instruction": "Dry Clean Only",
+    "wearing": "48",
+    "in_stock": true,
+    "category": [
+      2,
+      3
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 34,
+  "fields": {
+    "brand": "Gucci",
+    "name": "cat-patch check shirt",
+    "description": "Gucci's Epilogue collection conveys a message about leaving fashion’s old rules in the past, communicating the idea that pieces should be timeless. Among the looks are the Creative Director's most emblematic styles and motifs from the past five years, like the cat patch embroidered at the chest of this check wool-blend shirt.",
+    "price": 870,
+    "size": "[\"46\", \"48\", \"50\", \"52\"]",
+    "highlight": "[\"red\", \"wool-blend\", \"check pattern\", \"Gucci cat patch at the chest\", \"button-down collar\"]",
+    "images": "[\"https://i.imgur.com/FnPtEWg.jpg\", \"https://i.imgur.com/JLvJtIl.jpg\", \"https://i.imgur.com/ZcQfiG5.jpg\", \"https://i.imgur.com/etmzhro.jpg\", \"https://i.imgur.com/dFclE3m.jpg\"]",
+    "composition": "Wool 90%, Nylon 10%",
+    "washing_instruction": "Machine Wash",
+    "wearing": "50",
+    "in_stock": true,
+    "category": [
+      2,
+      6
+    ],
+    "owner": [
+      1
+    ]
+  }
 }
 ]
