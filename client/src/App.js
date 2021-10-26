@@ -1,5 +1,9 @@
 import React from 'react'
 import axios from 'axios'
+import Home from './home/Home'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Navbar from './navbar/Navbar'
+import Clothing from './allclothing/Clothing'
 
 function App() {
   React.useEffect(() => {
@@ -10,7 +14,19 @@ function App() {
     getData()
   })
 
-  return <h1>Hello World</h1>
+  return (
+    <BrowserRouter>
+      <Navbar/>
+      <Switch>
+        <Route exact path='/'>
+          <Home />
+        </Route>
+        <Route exact path='/clothing'>
+          <Clothing />
+        </Route>
+      </Switch>
+    </BrowserRouter>
+  )
 }
 
 export default App
