@@ -3,77 +3,96 @@
   "model": "category.category",
   "pk": 2,
   "fields": {
-    "name": "All Clothing"
+    "name": "All Clothing",
+    "info": "Designer clothing for every aesthetic. Streetwear lovers, prepare for vivid pops of colour, lashings of print and graffiti styles courtesy of skating sensation Palm Angels. Think slogan T-shirts, essential sweatshirts and a laid-back vibe, or follow the arrows to the grey zone with Off-White for plenty of diagonal stripes. Minimal lovers align for understated satisfaction with Jil Sander and JOSEPH for clean lines and pared-back perfection."
   }
 },
 {
   "model": "category.category",
   "pk": 3,
   "fields": {
-    "name": "Coats"
+    "name": "Coats",
+    "info": "Line up your designer coats — find styles for when the rain pours and the cold weather makes an unexpected appearance. Let outdoor specialist Canada Goose and mountain lover Moncler prepare you for cooler climes. A pioneer of waterproof fabrics, Mackintosh has you covered from the odd shower and stays true to minimalist silhouettes. Turn to Burberry for signature gabardine trench coats with Vintage check linings."
   }
 },
 {
   "model": "category.category",
   "pk": 4,
   "fields": {
-    "name": "Jackets"
+    "name": "Jackets",
+    "info": "Come rain or shine, call on our designer jackets for any occasion. Shroud your shoulders in denim jackets or logo bomber styles from LA expert Palm Angels, and rely on outdoor enthusiasts Canada Goose and Moncler for puffer jackets with high-sheen finishes. Delve into sustainable ECONYL® fabrics from Gucci with the Off The Grid collection."
   }
 },
 {
   "model": "category.category",
   "pk": 5,
   "fields": {
-    "name": "Polo Shirts"
+    "name": "Polo Shirts",
+    "info": "Fuelling your suave aesthetic, designer polo shirts have reclaimed their spot in your clothing canon. Made in the mountains but fit for the streets, Moncler mixes neutral colours with its signature embroidered logo. With GG stripes, monogram patterns and Interlocking G designs, Gucci relies on house codes to remain timeless, whilst Burberry makes its TB logo the centre of attention."
   }
 },
 {
   "model": "category.category",
   "pk": 6,
   "fields": {
-    "name": "Shirts"
+    "name": "Shirts",
+    "info": "Whether dressing up or keeping casual, our designer shirts give your look a certain polish. Vintage checks, earthy tones and patchwork prints call for Burberry, or follow the Arrows motifs on denim shirts from Off-White. See where old-school classics meet contemporary prints with Casablanca, whilst Italian duo Dolce & Gabbana injects traditional styles with Sicilian soul."
   }
 },
 {
   "model": "category.category",
   "pk": 7,
   "fields": {
-    "name": "Shoes"
+    "name": "Shoes",
+    "info": "From ultra-modern trainers to traditional brogues, put your best foot forward with our selection of designer shoes. YEEZY slides make warm-weather dressing a breeze, whilst Gucci Princetown loafers are forever staples. We’ve also got some of the most coveted kicks around — from the Balenciaga Triple S to Jordan 1s and Nike Air Max 97."
   }
 },
 {
   "model": "category.category",
   "pk": 8,
   "fields": {
-    "name": "Shorts"
+    "name": "Shorts",
+    "info": "Sunny times ahead calls for a little skin on show — and our designer shorts are the answer. For athletic styles or an industrial aesthetic, Off-White pulls through with cargo designs and track shorts. With its signature compass patch, Stone Island gives cotton drawstring shorts a simple lift. Dsquared2 invites all the logos, monochrome colourways and distressed denim shorts for fun in the sun."
   }
 },
 {
   "model": "category.category",
   "pk": 9,
   "fields": {
-    "name": "Sweatshirts & Knitwear"
+    "name": "Sweatshirts & Knitwear",
+    "info": "For layering, finding comfort or keeping cool in your downtime, our designer knitwear has you covered. Streetwear enthusiasts, follow the signs to Off-White for monochrome hoodies and sweatshirts — or rely on LA skater label Palm Angels for bears, crocodiles and sprayed logos on jumpers. Join the Stone Island club with the compass logo patch loud and proud on cardigans for the world to see."
   }
 },
 {
   "model": "category.category",
   "pk": 10,
   "fields": {
-    "name": "Trousers"
+    "name": "Trousers",
+    "info": "Kick-start your day with our collection of designer trousers. For function or making a statement, Palm Angels delivers sporty styles with a streetwear-inspired edge — think palm motifs on joggers, logo prints and all-over monograms. Turn to Dsquared2 for chinos that combine Italian tailoring with a Canadian twist, whilstOff-White answers your call with industrial cargo pants in a range of muted colours."
   }
 },
 {
   "model": "category.category",
   "pk": 11,
   "fields": {
-    "name": "T-Shirts & Vests"
+    "name": "T-Shirts & Vests",
+    "info": "Nail the basics with our designer T-shirts and vests. Look for playful bear prints, graphics and crocodile creatures on styles from Palm Angels, or keep your look streetwear fresh thanks to Off-White’s black and white diagonal stripes. Dsquared2 invites you to Italian refinement with a Canadian twist — expect bold slogans and Icon designs on neutral tees."
   }
 },
 {
   "model": "category.category",
   "pk": 12,
   "fields": {
-    "name": "Underwear & socks"
+    "name": "Underwear & socks",
+    "info": "Our selection of designer underwear and socks gets a gold star in the comfort stakes. Up your sleepwear game with Versace dressing gowns and Baroque-print pyjamas, and find signature Arrows motifs across Off-White boxers, socks and slippers. Get cosy in TEKLA organic cotton bathrobes and, of course, iconic Calvin Klein Underwear."
+  }
+},
+{
+  "model": "category.category",
+  "pk": 13,
+  "fields": {
+    "name": "Bags",
+    "info": "For carrying the essentials or making a statement, our designer bags are here to stay by your side. Turn to Gucci for iconic GG Supreme prints, quilted leather Marmont messenger styles and sustainable ECONYL® fabrics in the Off The Grid collection. Off-White backpacks give your outfit an industrial look, whilst Bottega Veneta delivers minimalist musings with Intrecciato finishes, padded Cassette shoulder bags and pouch designs."
   }
 }
 ]

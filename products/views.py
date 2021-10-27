@@ -49,3 +49,17 @@ class ProductDetailView(APIView):
             updated_product.save()
             return Response(updated_product.data, status = status.HTTP_202_ACCEPTED)
         return Response(updated_product.errors, status = status.HTTP_422_UNPROCESSABLE_ENTITY)
+
+class ProductsBrandView(APIView):
+    
+    def get(self, _request, brand):
+        product = Product.objects.filter( brand = brand)
+        serialized_product = PopulatedProductSerializer(product, many = True)
+        return Response(serialized_product.data, status=status.HTTP_200_OK)
+
+class ProductCategoryView(APIView):
+
+    def get(self, _request, category):
+        product = Product.objects.filter(category__name = category)
+        serialized_product = PopulatedProductSerializer(product, many = True)
+        return Response(serialized_product.data, status=status.HTTP_200_OK)

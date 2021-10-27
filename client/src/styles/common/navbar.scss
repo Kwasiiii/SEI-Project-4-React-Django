@@ -1,10 +1,45 @@
-.navbar-brand{
-  margin: 0 auto;
-}
-
-.nav-item{
-  .fa-user, .fa-shopping-basket{
-    font-size: 20px;
-    margin-left: 10px;
+header{
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  font-weight: 500;
+  font-size: 20px;
+  i{
+    color: black;
+    margin-left: 30px;
   }
+  .logo{
+    height: 87px;
+    width: 200px;
+  }
+  .nav__links{
+    margin-bottom: 0;
+    list-style: none;
+    li{
+      display: inline-block;
+      padding: 0 20px;
+    }
+    li #nav {
+      transition: all 0.3s ease 0s;
+      text-decoration: none;
+      color: black;
+      &:hover{
+        color: grey;
+      }
+    }
+  }
+}
+.dropdownmen{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        color: black;
+}
+.nav_designer:hover .dropdownmen{
+  display: block;
 }

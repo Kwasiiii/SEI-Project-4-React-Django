@@ -1,65 +1,63 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-// import Search from '../helpers/Search'
+import Category from '../category/Category'
 
 
-const Navbar = () => {
+
+const Navbar = ({ allProducts }) => {
   
+  const [ category, setCategory] = useState(null)
+
+  useEffect(()=> {
+    const getCategory = async() => {
+      const { data } = await axios('/api/category/')
+      console.log(data)
+      setCategory(data)
+    }
+    getCategory()
+  })
+
+  {<Category ca={category}/>}
+
   return (
     <div className="container">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav">
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Designers
-              </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <Link className="dropdown-item" >Action</Link>
-                <Link className="dropdown-item" >Another action</Link>
-                <Link className="dropdown-item" >Something else here</Link>
+      <header>
+        <Link to="/">
+          <img src="https://i.imgur.com/nhKUYP8.png" alt="logo" className="logo"/>
+        </Link>
+        <nav>
+          <ul className="nav__links">
+            <li className="nav_designer"><Link to="#" id="nav">Designer</Link>
+              <div className="dropdownmen">
+                {allProducts && Array.from(new Set(allProducts.map(pro => pro.brand))).map((brand) => { 
+                  return <Link className="dropdown-item" value={brand} key={brand} to={`/products/brand/${brand}`}>{brand}</Link>
+                })}
               </div>
             </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Clothing
-              </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <Link className="dropdown-item" to="/clothing">All Clothing</Link>
-                <Link className="dropdown-item" >Another action</Link>
-                <Link className="dropdown-item" >Something else here</Link>
+            <li className="nav_designer"><Link to="/clothing" id="nav">Clothing</Link>
+              <div className="dropdownmen">
+                {category && category.map(category => {
+                  return <Link className="dropdown-item" value={category.name} key={category.id} to={`/products/category/${category.name}`}>{category.name}</Link>
+                })}
               </div>
             </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Shoes
-              </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <Link className="dropdown-item" >Action</Link>
-                <Link className="dropdown-item" >Another action</Link>
-                <Link className="dropdown-item" >Something else here</Link>
-              </div>
+            <li>
+              {category && <Link className="nav-link" id="nav" to={`/products/category/${category[5].name}`}>{category[5].name}</Link>}
             </li>
           </ul>
-          <a className="navbar-brand" href="#">
-            <img src="https://i.imgur.com/skMXpHl.png" width="200" height="69" alt=""/>
-          </a>
+        </nav>
+        <div>
+          <Link to="/login">
+            <i className="far fa-user"></i>
+          </Link>
+          <Link to="#">
+            <i className="fas fa-shopping-basket"></i>
+          </Link>
         </div>
-        <form className="form-inline">
-          {/* <Search /> */}
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <i className="far fa-user"></i>
-            </li>
-            <li className="nav-item">
-              <i className="fas fa-shopping-basket"></i>
-            </li>
-          </ul>
-        </form>
-      </nav>
+        
+      </header>
+      
     </div>
 
   )

@@ -5,8 +5,17 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Navbar from './navbar/Navbar'
 import Clothing from './allclothing/Clothing'
 import ProductCard from './products/ProductCard'
+import Designer from './designers/Designer'
+import Category from './category/Category'
+import Login from './auth/Login'
+import Signup from './auth/Signup'
 
 function App() {
+
+  const [product, setProduct] = useState([])
+  const [ allProducts, setAllProducts ] = useState(null)
+  const [hasError, setHasError] = useState(false)
+
   React.useEffect(() => {
     const getData = async () => {
       const res = await axios.get('/api/products/') // * <-- replace with your endpoint
@@ -15,13 +24,11 @@ function App() {
     getData()
   })
 
-  const [product, setProduct] = useState([])
-  const [hasError, setHasError] = useState(false)
-
   useEffect(() => {
     const getProduct = async () => {
       try {
         const { data } = await axios('/api/products/')
+        setAllProducts(data)
         const four = () => {
           let n = Math.floor(Math.random() * data.length)
           if (n > 47){
@@ -43,7 +50,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar/>
+      <Navbar allProducts={allProducts}/>
       <Switch>
         <Route exact path='/'>
           <Home product={product} hasError={hasError}/>
@@ -53,6 +60,18 @@ function App() {
         </Route>
         <Route exact path='/products/:id'>
           <ProductCard four={product}/>
+        </Route>
+        <Route exact path='/products/brand/:brand'>
+          <Designer />
+        </Route>
+        <Route exact path='/products/category/:category'>
+          <Category />
+        </Route>
+        <Route exact path='/login'>
+          <Login />
+        </Route>
+        <Route exact path='/signup'>
+          <Signup />
         </Route>
       </Switch>
     </BrowserRouter>

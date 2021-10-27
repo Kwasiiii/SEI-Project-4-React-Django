@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = ({ product }) => {
 
@@ -12,13 +13,13 @@ const Home = ({ product }) => {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="https://i.imgur.com/8gOIe0c.jpg" className="d-block w-100" alt="Hommes Plisse" />
+            <img src="https://i.imgur.com/bNX5xas.jpg" className="d-block w-100" alt="gucci"/>
           </div>
           <div className="carousel-item">
-            <img src="https://i.imgur.com/2QA7FYp.jpg" className="d-block w-100" alt="tops" />
+            <img src="https://i.imgur.com/0g3VWAn.jpg" className="d-block w-100" alt="stone"/>
           </div>
           <div className="carousel-item">
-            <img src="https://i.imgur.com/VLK8U5Q.jpg" className="d-block w-100" alt="comfy" />
+            <img src="https://i.imgur.com/8gOIe0c.jpg" className="d-block w-100" alt="hommes"/>
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -70,9 +71,11 @@ const Home = ({ product }) => {
         })}
       </div>
       <div className="shop-new-in-now d-flex justify-content-center">
-        <button type="button" className="btn btn-light shop-new-in-now-button" data-toggle="button" aria-pressed="false" autoComplete="off">
-                Shop Now
-        </button>
+        <Link to="/clothing">
+          <button type="button" className="btn btn-light shop-new-in-now-button" data-toggle="button" aria-pressed="false" autoComplete="off">
+                  Shop Now
+          </button>
+        </Link>
       </div>
     </div>
   )

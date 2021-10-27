@@ -62,7 +62,8 @@ const Clothing = () => {
               <li><option value="hl">Price: high to low</option></li>
             </ul>
           </div>
-        </div><div className="card-deck all-clothing ">
+        </div>
+        <div className="card-deck all-clothing ">
           {(fileteredProducts.length > 0 ? fileteredProducts : clothing).map((clothes, i) => {
             return (
               
