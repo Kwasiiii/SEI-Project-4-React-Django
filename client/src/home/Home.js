@@ -1,37 +1,6 @@
-/* eslint-disable no-unused-vars */
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+import React from 'react'
 
-
-
-const Home = () => {
-  const [product, setProduct] = useState([])
-  const [hasError, setHasError] = useState(false)
-
-  useEffect(() => {
-    const getProduct = async () => {
-      try {
-        const { data } = await axios('/api/products/')
-        const four = () => {
-          let n = Math.floor(Math.random() * data.length)
-          if (n > 47){
-            n = n -= 4
-          }
-          const m = n + 4
-          const fourData = data.slice(n, m)
-          return fourData
-        }
-        const newData = four()
-        setProduct(newData)
-        console.log(data)
-      } catch (error) {
-        setHasError(true)
-      }
-    }
-    getProduct()
-  },[])
-
-  console.log(product)
+const Home = ({ product }) => {
 
   return (
     <div className="container">

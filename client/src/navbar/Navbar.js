@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+// import Search from '../helpers/Search'
 
 
 const Navbar = () => {
@@ -48,7 +49,7 @@ const Navbar = () => {
           </a>
         </div>
         <form className="form-inline">
-          <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+          {/* <Search /> */}
           <ul className="navbar-nav">
             <li className="nav-item">
               <i className="far fa-user"></i>

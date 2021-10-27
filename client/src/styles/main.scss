@@ -1,2 +1,8 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
 @import "./common/navbar.scss";
 @import "./home/home.scss";
+@import "./allclothing/allclothing.scss";
+@import "./products/productscard.scss";
