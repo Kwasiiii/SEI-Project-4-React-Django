@@ -5,6 +5,7 @@ from rest_framework.exceptions import PermissionDenied
 from datetime import datetime, timedelta
 from django.contrib.auth import get_user_model
 from django.conf import settings
+from rest_framework.permissions import IsAuthenticated
 import jwt
 from .serializers.common import UserSerializer
 from .serializers.wishlist import WishlistSerializer
@@ -43,6 +44,7 @@ class LoginView(APIView):
 
 
 class WishListView(APIView):
+    permission_classes = (IsAuthenticated, )
 
     def get(self, _request):
         wish_list = User.objects.all()
@@ -50,12 +52,12 @@ class WishListView(APIView):
         serialized_wishlist = WishlistSerializer(wish_list, many= True)
         return Response(serialized_wishlist.data, status=status.HTTP_200_OK)
 
-    def post(self, request):
-        product_to_add = WishlistSerializer(data = request.data)
-        if product_to_add.is_valid():
-            product_to_add.save()
-            return Response(product_to_add.data, status=status.HTTP_201_CREATED)
-        return Response(product_to_add.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+    def put(self, request):
+        request.data['owner'] = request.user.id
+        user_to_update = User.objects.get(pk = request.user.id)
+        product_to_add = Product.objects.get(pk = request.data['wish_list'])
+        user_to_update.wish_list.add(product_to_add)
+        return Response(WishlistSerializer(user_to_update).data, status=status.HTTP_201_CREATED)
 
 class WishListDetailView(APIView):
 

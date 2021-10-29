@@ -17,6 +17,8 @@ const Category = () => {
     getProducts()
   },[category])
   console.log(categories)
+
+
   return (
     <div className="container">
       <div className="clothing-top">

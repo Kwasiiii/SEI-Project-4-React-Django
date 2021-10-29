@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { useCart } from 'react-use-cart'
 
 const ProductCard = ({ four }) => {
@@ -125,20 +125,24 @@ const ProductCard = ({ four }) => {
       <div className="new-in">
         <h3>Recomendations</h3>
       </div>
-      <div className="new-in-products card-deck">
-        {four.map((product, i)=> {
+      <div className="card-deck all-clothing ">
+        {four.map((clothes, i) => {
           return (
-            <div key={i} className="card products col-lg-3">
-              <img src={product.images[0]} className="img-back" alt="card back" onMouseOver={e => (e.currentTarget.src = product.images[2])} onMouseOut={e => (e.currentTarget.src = product.images[0])}/>
-              <div className="card-body">
-                <h6>New Season</h6>
-                <h5>{product.brand}</h5>
-                <p>{product.name}</p>
-                <h6 className="product-price">£{product.price}</h6>
-              </div>
+            <div  className="clothing col-lg-3" key={i}>
+              <Link  to={`/products/${clothes.id}`}>
+                <div className="card ">
+                  <img src={clothes.images[0]} className="img-back" alt="card back" onMouseOver={e => (e.currentTarget.src = clothes.images[2])} onMouseOut={e => (e.currentTarget.src = clothes.images[0])} />
+                  <div className="card-body">
+                    <h5>{clothes.brand}</h5>
+                    <p>{clothes.name}</p>
+                    <h6 className="product-price">£{clothes.price}</h6>
+                  </div>
+                </div>
+              </Link>
             </div>
           )
-        })}
+        })        
+        }
       </div>
       </>
       }

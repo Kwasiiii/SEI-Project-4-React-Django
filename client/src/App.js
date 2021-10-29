@@ -11,6 +11,7 @@ import Login from './auth/Login'
 import Signup from './auth/Signup'
 import Profile from './profile/Profile'
 import Cart from './cart/Cart'
+import Footer from './footer/Footer'
 import { CartProvider } from 'react-use-cart'
 
 function App() {
@@ -86,6 +87,9 @@ function App() {
             <Cart  />
           </Route>
         </Switch>
+        <div className="footer-div">
+          <Footer />
+        </div>
       </BrowserRouter>
     </CartProvider>
   )

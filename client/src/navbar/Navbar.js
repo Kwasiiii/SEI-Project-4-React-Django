@@ -67,7 +67,7 @@ const Navbar = ({ allProducts }) => {
         <div>
           {
             userIsAuthenticated() ?
-              <><Link to="/profile">
+              <><Link to="/#">
                 <i className="far fa-user"></i>
               </Link><Link to="#">
                 <i className="far fa-star"></i>
@@ -84,9 +84,11 @@ const Navbar = ({ allProducts }) => {
                 <i className="far fa-user"></i>
               </Link><Link to="#">
                 <i className="far fa-star"></i>
-              </Link><Link to="#">
-                <i className="fas fa-shopping-basket"></i>
-              </Link></>
+              </Link>
+              <Link to="/cart">
+                <i className="fas fa-shopping-basket"><span className="badge bg-danger">{isEmpty ? isEmpty : totalUniqueItems}</span></i>
+              </Link>
+              </>
           }
         </div>
       </header>

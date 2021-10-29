@@ -10,12 +10,3 @@ class WishlistSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('wish_list', )
-
-    # def create(self, validated_data):
-    #     wish_list_validated_data = validated_data.pop('wish_list')
-    #     user = User.objects.create(**validated_data)
-    #     wish_list_serializer = self.fields['wish_list']
-    #     for each in wish_list_validated_data:
-    #         each['user'] = user
-    #     wishes = wish_list_serializer.create(wish_list_validated_data)
-    #     return user
