@@ -2,12 +2,16 @@ import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import { Link, useHistory, useLocation } from 'react-router-dom'
 import { userIsAuthenticated } from '../helpers/auth'
+import { useCart } from 'react-use-cart'
 
 
 
-const Navbar = ({ allProducts, totalUniqueItems }) => {
+const Navbar = ({ allProducts }) => {
   
   const [ category, setCategory] = useState(null)
+  const {
+    totalUniqueItems,
+  } = useCart()
 
   useEffect(()=> {
     const getCategory = async() => {

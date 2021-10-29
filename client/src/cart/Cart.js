@@ -1,6 +1,5 @@
 import React from 'react'
 import { useCart } from 'react-use-cart'
-import Navbar from '../navbar/Navbar'
 
 const Cart = () => {
   const {
@@ -13,10 +12,9 @@ const Cart = () => {
   } = useCart()
 
   console.log(items)
-  
 
-  if (isEmpty) return <h2>Your cart is empty</h2>
-  {<Navbar totalUniqueItems={totalUniqueItems}/>}
+  if (isEmpty) return <div className="container"><h2>Your cart is empty</h2></div>
+
   return (
     <div className="container">
       <div className="shopping-cart">

@@ -19,6 +19,7 @@ function App() {
   const [ allProducts, setAllProducts ] = useState(null)
   const [hasError, setHasError] = useState(false)
   
+  
 
   React.useEffect(() => {
     const getData = async () => {
@@ -55,7 +56,7 @@ function App() {
   return (
     <CartProvider>
       <BrowserRouter>
-        <Navbar allProducts={allProducts}/>
+        <Navbar allProducts={allProducts} />
         <Switch>
           <Route exact path='/'>
             <Home product={product} hasError={hasError}/>
@@ -82,7 +83,7 @@ function App() {
             <Profile />
           </Route>
           <Route exact path='/cart'>
-            <Cart />
+            <Cart  />
           </Route>
         </Switch>
       </BrowserRouter>
