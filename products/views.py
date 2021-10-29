@@ -4,6 +4,8 @@ from rest_framework import status
 from rest_framework.exceptions import NotFound
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
+from category.models import Category
+from category.serializers.common import CategorySerializer
 from .models import Product
 from .serializers.common import ProductSerializer
 from .serializers.populated import PopulatedProductSerializer
@@ -61,5 +63,8 @@ class ProductCategoryView(APIView):
 
     def get(self, _request, category):
         product = Product.objects.filter(category__name = category)
+        categories = Category.objects.get(name = category)
+        serialized_category = CategorySerializer(categories)
+        print(serialized_category.data)
         serialized_product = PopulatedProductSerializer(product, many = True)
-        return Response(serialized_product.data, status=status.HTTP_200_OK)
+        return Response([serialized_product.data, serialized_category.data], status=status.HTTP_200_OK)

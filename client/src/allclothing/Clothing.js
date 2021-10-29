@@ -66,7 +66,6 @@ const Clothing = () => {
         <div className="card-deck all-clothing ">
           {(fileteredProducts.length > 0 ? fileteredProducts : clothing).map((clothes, i) => {
             return (
-              
               <div  className="clothing col-lg-3" key={i}>
                 <Link  to={`/products/${clothes.id}`}>
                   <div className="card ">

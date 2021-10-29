@@ -9,12 +9,16 @@ import Designer from './designers/Designer'
 import Category from './category/Category'
 import Login from './auth/Login'
 import Signup from './auth/Signup'
+import Profile from './profile/Profile'
+import Cart from './cart/Cart'
+import { CartProvider } from 'react-use-cart'
 
 function App() {
 
   const [product, setProduct] = useState([])
   const [ allProducts, setAllProducts ] = useState(null)
   const [hasError, setHasError] = useState(false)
+  
 
   React.useEffect(() => {
     const getData = async () => {
@@ -49,32 +53,40 @@ function App() {
   },[])
 
   return (
-    <BrowserRouter>
-      <Navbar allProducts={allProducts}/>
-      <Switch>
-        <Route exact path='/'>
-          <Home product={product} hasError={hasError}/>
-        </Route>
-        <Route exact path='/clothing'>
-          <Clothing />
-        </Route>
-        <Route exact path='/products/:id'>
-          <ProductCard four={product}/>
-        </Route>
-        <Route exact path='/products/brand/:brand'>
-          <Designer />
-        </Route>
-        <Route exact path='/products/category/:category'>
-          <Category />
-        </Route>
-        <Route exact path='/login'>
-          <Login />
-        </Route>
-        <Route exact path='/signup'>
-          <Signup />
-        </Route>
-      </Switch>
-    </BrowserRouter>
+    <CartProvider>
+      <BrowserRouter>
+        <Navbar allProducts={allProducts}/>
+        <Switch>
+          <Route exact path='/'>
+            <Home product={product} hasError={hasError}/>
+          </Route>
+          <Route exact path='/clothing'>
+            <Clothing />
+          </Route>
+          <Route exact path='/products/:id'>
+            <ProductCard four={product}/>
+          </Route>
+          <Route exact path='/products/brand/:brand'>
+            <Designer />
+          </Route>
+          <Route exact path='/products/category/:category'>
+            <Category />
+          </Route>
+          <Route exact path='/login'>
+            <Login />
+          </Route>
+          <Route exact path='/signup'>
+            <Signup />
+          </Route>
+          <Route exact path='/profile'>
+            <Profile />
+          </Route>
+          <Route exact path='/cart'>
+            <Cart />
+          </Route>
+        </Switch>
+      </BrowserRouter>
+    </CartProvider>
   )
 }
 

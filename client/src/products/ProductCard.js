@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
+import { useCart } from 'react-use-cart'
 
 const ProductCard = ({ four }) => {
+  const { addItem } = useCart()
 
   const [product, setProduct] = useState(null)
   const [ hasError, setHasError ] = useState(false)
@@ -23,7 +25,6 @@ const ProductCard = ({ four }) => {
   }, [id])
 
   console.log(hasError)
-  console.log(product)
 
   return (
     <div className="container">
@@ -64,17 +65,15 @@ const ProductCard = ({ four }) => {
           <h4>{product.brand}</h4>
           <h6>{product.name}</h6>
           <h5>£{product.price}</h5>
-          <div className="dropdown">
-            <a className="btn btn-light size dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                Select size {product.brand} Standard
-            </a>
-            <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <div className="select">
+            <select className="form-select form-select-lg" aria-label=".form-select-sm example">
+              <option selected>Select size {product.brand} Standard</option>
               {product.size.map((size, i) => {
-                return <li key={i}><a className="dropdown-item" href="#">{size}</a></li>
+                return <option key={i} value={size}>{size}</option>
               })}
-            </ul>
+            </select>
           </div>
-          <button type="button" className="btn btn-dark shop-new-in-now-button" data-toggle="button" aria-pressed="false" autoComplete="off">
+          <button type="button" onClick={() => addItem(product)} className="btn btn-dark shop-new-in-now-button" data-toggle="button" aria-pressed="false" autoComplete="off">
               Add To Basket
           </button>
         </div>

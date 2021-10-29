@@ -1,0 +1,44 @@
+.row{
+  margin: 50px auto 0;
+  form{
+    color: white;
+    background-color: rgb(49, 130, 167);
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    .form-field{
+      .social-login{
+        margin: 10px auto;
+        .facebook-btn{
+          background-color: #3b5998;
+          color: white;
+        }
+        .google-btn{
+          margin-left: 15px;
+          background-color: #de5246;
+          color: white;
+        }
+      }
+    }
+    .form-floating{
+      label{
+        color: black;
+      }
+    }
+    .btn-danger{
+      border: none;
+      font-size: 20px;
+      width: inherit;
+    }
+    p{
+      font-size: 20px;
+      a{
+        text-decoration: none;
+        span{
+          color: red;
+        }
+      }
+      
+    }
+  }
+}

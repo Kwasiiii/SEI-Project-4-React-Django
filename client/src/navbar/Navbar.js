@@ -1,24 +1,36 @@
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import Category from '../category/Category'
+import { Link, useHistory, useLocation } from 'react-router-dom'
+import { userIsAuthenticated } from '../helpers/auth'
 
 
 
-const Navbar = ({ allProducts }) => {
+const Navbar = ({ allProducts, totalUniqueItems }) => {
   
   const [ category, setCategory] = useState(null)
 
   useEffect(()=> {
     const getCategory = async() => {
       const { data } = await axios('/api/category/')
-      console.log(data)
+      // console.log(data)
       setCategory(data)
     }
     getCategory()
-  })
+  },[])
 
-  {<Category ca={category}/>}
+  const history = useHistory()
+  const location = useLocation()
+
+  useEffect(() => {
+  }, [location.pathname])
+
+  console.log('User is authenticated -->', userIsAuthenticated())
+
+  const handleLogout = () => {
+    window.localStorage.removeItem('token')
+    history.push('/')
+  }
+
 
   return (
     <div className="container">
@@ -48,18 +60,32 @@ const Navbar = ({ allProducts }) => {
           </ul>
         </nav>
         <div>
-          <Link to="/login">
-            <i className="far fa-user"></i>
-          </Link>
-          <Link to="#">
-            <i className="fas fa-shopping-basket"></i>
-          </Link>
+          {
+            userIsAuthenticated() ?
+              <><Link to="/profile">
+                <i className="far fa-user"></i>
+              </Link><Link to="#">
+                <i className="far fa-star"></i>
+              </Link>
+              <Link to="/cart">
+                <i className="fas fa-shopping-basket"><span className="badge bg-danger">{totalUniqueItems && totalUniqueItems}</span></i>
+              </Link>
+              <Link to="#">
+                <i onClick={handleLogout} className="fas fa-sign-out-alt"></i>
+              </Link>
+              </>
+              :
+              <><Link to="/login">
+                <i className="far fa-user"></i>
+              </Link><Link to="#">
+                <i className="far fa-star"></i>
+              </Link><Link to="#">
+                <i className="fas fa-shopping-basket"></i>
+              </Link></>
+          }
         </div>
-        
       </header>
-      
     </div>
-
   )
 }
 

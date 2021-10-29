@@ -25,43 +25,39 @@ const Login = () => {
     event.preventDefault() 
     try {
       const { data } = await axios.post('/api/auth/login/', formData)
-      setTokenToLocalStorage(data.token) 
+      setTokenToLocalStorage(data.token)
+
+      console.log(data) 
     } catch (err) {
       console.log(err)
     }
   }
-
+  
   return (
-    <>
-      <div className="site-wrapper">
-        <div className="login-page">
-          <div className="form-page">
-            <div className="container">
-              <div className="row">
-                <form onSubmit={handleSubmit} className="col-10 offset-1 mt-4 col-md-6 offset-md-3">
-                  <h3>Login</h3>
-                  <div className="form-field">
-                    <div className="social-login">
-                      <button className="btn facebook-btn social-btn" type="button"><span><i className="fab fa-facebook-f"></i> Sign in with Facebook</span> </button>
-                      <button className="btn google-btn social-btn" type="button"><span><i className="fab fa-google-plus-g"></i> Sign in with Google+</span> </button>
-                    </div>
-                    <p>OR</p>
-                    <label htmlFor="email">Email</label>
-                    <input onChange={handleChange} type="email" name="email" placeholder="Email" />
-                  </div>
-                  <div className="form-field">
-                    <label htmlFor="password">Password</label>
-                    <input onChange={handleChange} type="password" name="password" placeholder="Password" />
-                  </div>
-                  <button className="btn btn-yellow w-100">Login</button>
-                  <p className="no-account">Don&apos;t have an Account?<Link to="/signup"><span> Click Here</span></Link></p>
-                </form>
-              </div>
+    <div className="container">
+      <div className="row">
+        <form onSubmit={handleSubmit} className="col-10 offset-1 mt-4 col-md-6 offset-md-3">
+          <h3 className="mb-4">Login</h3>
+          <div className="form-field">
+            <div className="social-login mb-3">
+              <button className="btn facebook-btn social-btn" type="button"><span><i className="fab fa-facebook-f"></i> Sign in with Facebook</span> </button>
+              <button className="btn google-btn social-btn" type="button"><span><i className="fab fa-google-plus-g"></i> Sign in with Google+</span> </button>
+            </div>
+            <p>OR</p>
+            <div className="form-floating mb-3">
+              <input type="email" onChange={handleChange} name="email" className="form-control" id="floatingInput" placeholder="name@example.com"/>
+              <label htmlFor="floatingInput">Email address</label>
             </div>
           </div>
-        </div>
+          <div className="form-floating mb-3">
+            <input type="password" onChange={handleChange} name="password" className="form-control" id="floatingPassword" placeholder="Password"/>
+            <label htmlFor="floatingPassword">Password</label>
+          </div>
+          <button className="btn btn-danger mb-3 w-100">Login</button>
+          <p className="no-account">Don&apos;t have an Account?<Link to="/signup"><span> Click Here</span></Link></p>
+        </form>
       </div>
-    </>
+    </div>
   )
 }
 

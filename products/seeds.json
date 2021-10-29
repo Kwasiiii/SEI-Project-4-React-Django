@@ -15,8 +15,8 @@
     "wearing": "M",
     "in_stock": true,
     "category": [
-      9,
-      2
+      2,
+      9
     ],
     "owner": [
       1
@@ -39,8 +39,8 @@
     "wearing": "M",
     "in_stock": true,
     "category": [
-      9,
-      2
+      2,
+      9
     ],
     "owner": [
       1
@@ -255,8 +255,8 @@
     "wearing": "2",
     "in_stock": true,
     "category": [
-      9,
-      2
+      2,
+      9
     ],
     "owner": [
       1
@@ -495,8 +495,8 @@
     "wearing": "L",
     "in_stock": true,
     "category": [
-      9,
-      2
+      2,
+      9
     ],
     "owner": [
       1
@@ -567,8 +567,8 @@
     "wearing": "M",
     "in_stock": true,
     "category": [
-      9,
-      2
+      2,
+      9
     ],
     "owner": [
       1
@@ -639,8 +639,8 @@
     "wearing": "L",
     "in_stock": true,
     "category": [
-      9,
-      2
+      2,
+      9
     ],
     "owner": [
       1
@@ -783,8 +783,8 @@
     "wearing": "M",
     "in_stock": true,
     "category": [
-      9,
-      2
+      2,
+      9
     ],
     "owner": [
       1
@@ -999,8 +999,8 @@
     "wearing": "M",
     "in_stock": true,
     "category": [
-      9,
-      2
+      2,
+      9
     ],
     "owner": [
       1
@@ -1194,6 +1194,30 @@
     "category": [
       2,
       7
+    ],
+    "owner": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 55,
+  "fields": {
+    "brand": "Alexander McQueen",
+    "name": "graffiti-logo long-sleeve T-shirt",
+    "description": "Alexander McQueen is renowned for infusing art inspirations into garment designs. Showcased on this long-sleeve top, the logo is printed is in a graffity style, whilst the two-tone palette gives it a refined edge.",
+    "price": 250,
+    "size": "[\"XS\", \"S\", \"M\", \"L\"]",
+    "highlight": "[\"white\", \"cotton\", \"logo print to the front\", \"crew neck\", \"long sleeves\", \"straight hem\"]",
+    "images": "[\"https://i.imgur.com/1H5yudc.png\", \"https://i.imgur.com/zWebEkB.png\", \"https://i.imgur.com/smpzwjF.png\", \"https://i.imgur.com/E7cjvbn.png\", \"https://i.imgur.com/eMrf7vk.png\"]",
+    "composition": "cotton 100%",
+    "washing_instruction": "Machine Wash",
+    "wearing": "M",
+    "in_stock": true,
+    "category": [
+      9,
+      2
     ],
     "owner": [
       1

@@ -7,6 +7,9 @@ from django.contrib.auth import get_user_model
 from django.conf import settings
 import jwt
 from .serializers.common import UserSerializer
+from .serializers.wishlist import WishlistSerializer
+
+from products.models import Product
 
 User = get_user_model()
 
@@ -36,4 +39,29 @@ class LoginView(APIView):
             settings.SECRET_KEY,
             algorithm= 'HS256'
         )
-        return Response({'token':token, 'message': f"Welcome back, {user_to_login.username}"})
+        return Response({'token':token, 'message': f"Welcome back, {user_to_login.username}", 'username':{user_to_login.username}, 'email':{user_to_login.email}, 'first_name':{user_to_login.first_name}, 'last_name': {user_to_login.last_name}})
+
+
+class WishListView(APIView):
+
+    def get(self, _request):
+        wish_list = User.objects.all()
+        print()
+        serialized_wishlist = WishlistSerializer(wish_list, many= True)
+        return Response(serialized_wishlist.data, status=status.HTTP_200_OK)
+
+    def post(self, request):
+        product_to_add = WishlistSerializer(data = request.data)
+        if product_to_add.is_valid():
+            product_to_add.save()
+            return Response(product_to_add.data, status=status.HTTP_201_CREATED)
+        return Response(product_to_add.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
+class WishListDetailView(APIView):
+
+    def delete(self, request, pk, product):
+        user = User.objects.get(pk=pk)
+        product_to_delete = Product.objects.get(pk = product)
+        user.wish_list.remove(product_to_delete)
+        # serialized_user = WishlistSerializer(user)
+        return Response(status=status.HTTP_204_NO_CONTENT)
