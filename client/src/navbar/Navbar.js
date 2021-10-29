@@ -10,6 +10,7 @@ const Navbar = ({ allProducts }) => {
   
   const [ category, setCategory] = useState(null)
   const {
+    isEmpty,
     totalUniqueItems,
   } = useCart()
 
@@ -72,7 +73,7 @@ const Navbar = ({ allProducts }) => {
                 <i className="far fa-star"></i>
               </Link>
               <Link to="/cart">
-                <i className="fas fa-shopping-basket"><span className="badge bg-danger">{totalUniqueItems && totalUniqueItems}</span></i>
+                <i className="fas fa-shopping-basket"><span className="badge bg-danger">{isEmpty ? isEmpty : totalUniqueItems}</span></i>
               </Link>
               <Link to="#">
                 <i onClick={handleLogout} className="fas fa-sign-out-alt"></i>
